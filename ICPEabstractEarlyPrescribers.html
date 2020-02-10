@@ -13142,7 +13142,7 @@ $( document ).ready(function(){
     Verbatim abstract text in blue follows each analysis.<br>
     </font>
 <br>
-ICPE 2020 KY Survey Early Prescribers (2350 characters limit; 2339 characters below)<br>
+ICPE 2020 KY Survey Early Prescribers (2348 characters of 2350 limit)<br>
 <br></p>
 <hr>
 
@@ -13156,7 +13156,7 @@ ICPE 2020 KY Survey Early Prescribers (2350 characters limit; 2339 characters be
 <br>
 Dasgupta N, Brown JR, Freeman P, Nocera M, Slavova S<br>
 <br>
-Uptake of new technology occurs first in "early adopters." We hypothesized that early prescribers of new drugs might also have practice differences, influencing interpretation of early post-marketing assessments.<br>
+Uptake of new technology occurs first in "early adopters." We hypothesized early prescribers of new drugs might also have practice differences, influencing interpretation of early post-marketing assessments.<br>
 <br>
 <strong>Methods</strong><br>
 -Design: Planned hypothesis generating analysis of a larger survey focused on opioid prescribing, fielded by a state licensing authority in Nov 2019
@@ -13170,7 +13170,7 @@ Uptake of new technology occurs first in "early adopters." We hypothesized that 
 -Analysis: Descriptive stats<br>
 <br>
 <strong>Results</strong><br>
-Emails were delivered to 7631 physicians, with 651 respondents (8.5% - similar to other unincentivized HCP surveys), of whom 338 were eligible for the opioid portion of survey. Some 60% of early prescribers were men; but there were relatively more women in comparison to standard prescribers (40% vs. 31%). Early adopters were disproportionately in early or late career (&lt;15 or 35+ practice-years). There were no differences in patient load, practice setting, or medical specialty, except emergency medicine less likely (OR=0.52) and OB/GYN more likely (OR=1.7) to be early adopters.<br>
+Emails were delivered to 7631 physicians, with 651 respondents (8.5% - similar to other unincentivized HCP surveys), of whom 338 were eligible for the opioid portion of survey. Some 60% of early prescribers were men; but there were relatively more women in comparison to standard prescribers (40% vs. 31%). Early adopters were disproportionately in early or late career (&lt;15 or 35+ practice-years). There were no differences in patient load, practice setting, or medical specialty, except emergency medicine and general surgery less likely, and oncology and OB/GYN more likely to be early adopters.<br>
 <br>
 Early prescribers were more likely to use opioid risk stratification tools (32% vs. 24%). Early and standard prescribers had similar abuse deterrent formulation (ADF) opioids use. However, early adopters were more likely (OR 1.7) to prescribe newer non-OxyContin ADFs, with 93% endorsing "innovative nature of abuse-deterrence mechanisms" as a consideration. They were more likely to support legislation mandating insurance coverage for ADFs (OR 1.3), and more strongly endorsed technical solutions like electronic prescription monitoring programs and urine drug screens, while more vehemently opposing prescribing limits.<br>
 <br>
@@ -13201,7 +13201,7 @@ You don't really need to register. Just use YourName@anydomain.com (so I can tra
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">display</span> <span class="s">&quot;Notebook generated on </span><span class="vg">$S_DATE</span><span class="s"> at </span><span class="vg">$S_TIME</span><span class="s"> ET&quot;</span>
@@ -13220,8 +13220,8 @@ frame change docs
 <span class="k">di</span> <span class="s">&quot;Exclude non-controlled substance prescribers and incomplete surveys:&quot;</span><span class="k"></span>
 <span class="k">keep if</span> contr_sub<span class="o">==</span><span class="m">1</span>
 <span class="c1">    * n=206 deleted</span><span class="k"></span>
-<span class="k">di</span> <span class="s">&quot;Exclude incomplete surveys:&quot;</span><span class="k"></span>
-<span class="k">keep if</span> physician_survey_complete<span class="o">==</span><span class="m">2</span>
+<span class="k">di</span> <span class="s">&quot;Exclude incomplete surveys:&quot;</span>
+<span class="c1">*keep if physician_survey_complete==2</span>
 <span class="c1">    * n=142 deleted</span>
 
 <span class="c1">// Create composite variables for ADF prescribing</span>
@@ -13266,7 +13266,7 @@ frame change docs
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-Notebook generated on  5 Feb 2020 at 23:06:50 ET
+Notebook generated on 10 Feb 2020 at 10:40:03 ET
 
 /Users/nabarun/Dropbox/Projects/P1 Surveys
 
@@ -13289,30 +13289,28 @@ Exclude non-controlled substance prescribers and incomplete surveys:
 
 Exclude incomplete surveys:
 
-(142 observations deleted)
+
+(46 real changes made)
+(37 real changes made)
+(54 real changes made)
+(44 real changes made)
+(176 real changes made)
 
 
-(45 real changes made)
-(36 real changes made)
-(52 real changes made)
-(43 real changes made)
-(166 real changes made)
-
-
-(177 real changes made)
+(187 real changes made)
 
 
 
     Any ADF |
 prescribing |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-          0 |        161       47.63       47.63
-          1 |        177       52.37      100.00
+          0 |        293       61.04       61.04
+          1 |        187       38.96      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
 
-(69 real changes made)
+(71 real changes made)
 
 
 
@@ -13321,15 +13319,15 @@ non-OxyCont |
      in ADF |
 prescribing |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-          0 |        269       79.59       79.59
-          1 |         69       20.41      100.00
+          0 |        409       85.21       85.21
+          1 |         71       14.79      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
 
-(62 real changes made)
+(68 real changes made)
 
-(230 real changes made, 230 to missing)
+(365 real changes made, 365 to missing)
 </pre>
 </div>
 </div>
@@ -13348,7 +13346,7 @@ prescribing |      Freq.     Percent        Cum.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[162]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">la var</span> early_adopt___1 <span class="s">&quot;Usually prescribe new medications before others do&quot;</span><span class="k"></span>
@@ -13397,10 +13395,10 @@ medications |
      before |
   others do |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-  Unchecked |        320       94.67       94.67
-    Checked |         18        5.33      100.00
+  Unchecked |        461       96.04       96.04
+    Checked |         19        3.96      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
      Prefer |
 medications |
@@ -13410,10 +13408,10 @@ worked well |
 patients in |
    the past |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-  Unchecked |        191       56.51       56.51
-    Checked |        147       43.49      100.00
+  Unchecked |        315       65.62       65.62
+    Checked |        165       34.38      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
  Like being |
     able to |
@@ -13424,10 +13422,10 @@ medications |
        I&#39;ve |
  prescribed |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-  Unchecked |        310       91.72       91.72
-    Checked |         28        8.28      100.00
+  Unchecked |        444       92.50       92.50
+    Checked |         36        7.50      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
    Like the |
  variety of |
@@ -13435,10 +13433,10 @@ prescribing |
         new |
 medications |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-  Unchecked |        296       87.57       87.57
-    Checked |         42       12.43      100.00
+  Unchecked |        434       90.42       90.42
+    Checked |         46        9.58      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
   Feel more |
 comfortable |
@@ -13446,10 +13444,10 @@ comfortable |
    familiar |
 medications |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-  Unchecked |        155       45.86       45.86
-    Checked |        183       54.14      100.00
+  Unchecked |        276       57.50       57.50
+    Checked |        204       42.50      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
   Prefer to |
  wait until |
@@ -13461,39 +13459,41 @@ experiences |
 prescribing |
       new m |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-  Unchecked |        204       60.36       60.36
-    Checked |        134       39.64      100.00
+  Unchecked |        328       68.33       68.33
+    Checked |        152       31.67      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
 
 
      +-----------------------------------------------------------------------------------+
      | early_adopt_other                                                                 |
      |-----------------------------------------------------------------------------------|
-  1. | Rarely recommend or prescribe new medications due to cost and coverage issues.    |
- 12. | mix between EBM and looking for &#39;outside of the box&#39; approach                     |
- 30. | Wait at least 6 months before prescribing                                         |
- 47. | Most of the time Medications with abuse deterrent are not covered by insurance    |
- 49. | research the medications, look past the pharma marketing material before making.. |
+  3. | Rarely recommend or prescribe new medications due to cost and coverage issues.    |
+ 21. | mix between EBM and looking for &#39;outside of the box&#39; approach                     |
+ 43. | Wait at least 6 months before prescribing                                         |
+ 65. | Most of the time Medications with abuse deterrent are not covered by insurance    |
+ 69. | research the medications, look past the pharma marketing material before making.. |
      |-----------------------------------------------------------------------------------|
- 58. | I&#39;m a hospitalsit.                                                                |
- 62. | Be able to see some post- marketing literature                                    |
- 74. | Pay for what&#39;s covered under insurance more than happy to try newer options if .. |
- 77. | more intensive absolutely blinded non pharmaceutical indiustry sponsopred multi.. |
- 93. | case by case basis-new doesn&#39;t necessarily mean better/improved.                  |
+ 84. | I&#39;m a hospitalsit.                                                                |
+ 89. | Be able to see some post- marketing literature                                    |
+103. | Pay for what&#39;s covered under insurance more than happy to try newer options if .. |
+107. | more intensive absolutely blinded non pharmaceutical indiustry sponsopred multi.. |
+131. | case by case basis-new doesn&#39;t necessarily mean better/improved.                  |
      |-----------------------------------------------------------------------------------|
-115. | Look for evidence                                                                 |
-124. | Study before prescribing                                                          |
-220. | expense; don&#39;t rx opiates to anyone suspected of misuse or abuse or diversion.    |
-276. | many of my elderly and disabled patients are burdened by medication costs and p.. |
-281. | formulary is an issue and cost to patients as well would deter my prescribing     |
+163. | Look for evidence                                                                 |
+176. | Study before prescribing                                                          |
+307. | expense; don&#39;t rx opiates to anyone suspected of misuse or abuse or diversion.    |
+308. | Wait to see clinical use/stats/studies once product is on the market for severa.. |
+394. | many of my elderly and disabled patients are burdened by medication costs and p.. |
      |-----------------------------------------------------------------------------------|
-290. | dont prescribe that often                                                         |
-291. | Generally, I am restricted by the cost of the new medications and the insurance.. |
-294. | It is hard to successfully prescribe new medications in this rea unless insuran.. |
-316. | patient Population limits prescribing new medications                             |
-333. | prescribe new meds in key needs, but wait with overlap or non essential meds .... |
+401. | formulary is an issue and cost to patients as well would deter my prescribing     |
+412. | dont prescribe that often                                                         |
+413. | Generally, I am restricted by the cost of the new medications and the insurance.. |
+416. | It is hard to successfully prescribe new medications in this rea unless insuran.. |
+444. | patient Population limits prescribing new medications                             |
+     |-----------------------------------------------------------------------------------|
+471. | prescribe new meds in key needs, but wait with overlap or non essential meds .... |
      +-----------------------------------------------------------------------------------+
 </pre>
 </div>
@@ -13516,7 +13516,7 @@ prescribing |
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[163]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="c1">// Create variables for early adopters</span>
@@ -13548,31 +13548,31 @@ prescribing |
 <pre>
 
 
-(18 real changes made)
+(19 real changes made)
 
 
 Self-identi |
  fied early |
    adopters |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-          0 |        320       94.67       94.67
-          1 |         18        5.33      100.00
+          0 |        461       96.04       96.04
+          1 |         19        3.96      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 
 
 
-(72 real changes made)
+(83 real changes made)
 
 
      Enjoys |
       novel |
 prescribing |      Freq.     Percent        Cum.
 ------------+-----------------------------------
-          0 |        266       78.70       78.70
-          1 |         72       21.30      100.00
+          0 |        397       82.71       82.71
+          1 |         83       17.29      100.00
 ------------+-----------------------------------
-      Total |        338      100.00
+      Total |        480      100.00
 </pre>
 </div>
 </div>
@@ -13591,7 +13591,7 @@ prescribing |      Freq.     Percent        Cum.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[164]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> gender early_adopt___1, col nokey<span class="k"></span>
@@ -13734,7 +13734,7 @@ prescribing |      Freq.     Percent        Cum.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">di</span> <span class="s">&quot;Among non-early prescribers:&quot;</span><span class="k"></span>
@@ -13823,7 +13823,7 @@ in practice following |      prescribing
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">ranksum</span> years_prac,<span class="k"> by</span>(early)<span class="k"></span>
@@ -13919,7 +13919,7 @@ Early prescribers tended to be disproportionately in early or late career (<15 a
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> no_patients early, col nokey
@@ -13995,7 +13995,7 @@ There was no difference in number of patients seen per week.</font></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> specialty_type early, col nokey
@@ -14095,7 +14095,7 @@ Pediatrics or Neonata |         9          1 |        10
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><font color='blue'>
-There were no significant differences in medical specialty... with possible exceptions of emergency medicine (less likely to be early adopters) and OB/GYN (more likely), but cell sizes were small.</font></p>
+There were no significant differences in medical specialty... possibly except emergency medicine and general surgery less likely, and hem/onc and OB/GYN more likely to be early adopters, but cell sizes were small.</font></p>
 
 </div>
 </div>
@@ -14110,7 +14110,7 @@ There were no significant differences in medical specialty... with possible exce
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> prac_type early, col nokey
@@ -14193,7 +14193,7 @@ Likewise, there were no appreciable differences in practice setting, possibly wi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> riskstrat early,<span class="k"> m</span> col nokey
@@ -14220,25 +14220,25 @@ Likewise, there were no appreciable differences in practice setting, possibly wi
     tools do you most |      prescribing
    commonly utilize?  |         0          1 |     Total
 ----------------------+----------------------+----------
-     Opioid risk tool |        27          5 |        32 
-                      |     10.15       6.94 |      9.47 
+     Opioid risk tool |        31          7 |        38 
+                      |      7.81       8.43 |      7.92 
 ----------------------+----------------------+----------
-Screener and Opioid A |         4          2 |         6 
-                      |      1.50       2.78 |      1.78 
+Screener and Opioid A |         5          2 |         7 
+                      |      1.26       2.41 |      1.46 
 ----------------------+----------------------+----------
-Screener and Opioid A |         7          6 |        13 
-                      |      2.63       8.33 |      3.85 
+Screener and Opioid A |         9          6 |        15 
+                      |      2.27       7.23 |      3.12 
 ----------------------+----------------------+----------
- Brief Risk Interview |        23          9 |        32 
-                      |      8.65      12.50 |      9.47 
+ Brief Risk Interview |        27         11 |        38 
+                      |      6.80      13.25 |      7.92 
 ----------------------+----------------------+----------
                 Other |         3          1 |         4 
-                      |      1.13       1.39 |      1.18 
+                      |      0.76       1.20 |      0.83 
 ----------------------+----------------------+----------
-                    . |       202         49 |       251 
-                      |     75.94      68.06 |     74.26 
+                    . |       322         56 |       378 
+                      |     81.11      67.47 |     78.75 
 ----------------------+----------------------+----------
-                Total |       266         72 |       338 
+                Total |       397         83 |       480 
                       |    100.00     100.00 |    100.00 
 </pre>
 </div>
@@ -14260,7 +14260,7 @@ Early prescribers were more likely to use opioid risk stratification tools (32% 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> anyadf early, col nokey<span class="k"></span>
@@ -14287,30 +14287,30 @@ Early prescribers were more likely to use opioid risk stratification tools (32% 
 prescribin |      prescribing
          g |         0          1 |     Total
 -----------+----------------------+----------
-         0 |       131         30 |       161 
-           |     49.25      41.67 |     47.63 
+         0 |       254         39 |       293 
+           |     63.98      46.99 |     61.04 
 -----------+----------------------+----------
-         1 |       135         42 |       177 
-           |     50.75      58.33 |     52.37 
+         1 |       143         44 |       187 
+           |     36.02      53.01 |     38.96 
 -----------+----------------------+----------
-     Total |       266         72 |       338 
+     Total |       397         83 |       480 
            |    100.00     100.00 |    100.00 
 
                                                          Proportion
                  |   Exposed   Unexposed  |      Total     Exposed
 -----------------+------------------------+------------------------
-           Cases |        42         135  |        177       0.2373
-        Controls |        30         131  |        161       0.1863
+           Cases |        44         143  |        187       0.2353
+        Controls |        39         254  |        293       0.1331
 -----------------+------------------------+------------------------
-           Total |        72         266  |        338       0.2130
+           Total |        83         397  |        480       0.1729
                  |                        |
                  |      Point estimate    |    [95% Conf. Interval]
                  |------------------------+------------------------
-      Odds ratio |         1.358519       |    .7774555    2.389336 (exact)
- Attr. frac. ex. |          .263904       |   -.2862473    .5814736 (exact)
- Attr. frac. pop |         .0626213       |
+      Odds ratio |         2.003945       |    1.208328    3.324837 (exact)
+ Attr. frac. ex. |         .5009843       |    .1724102    .6992334 (exact)
+ Attr. frac. pop |         .1178786       |
                  +-------------------------------------------------
-                               chi2(1) =     1.31  Pr&gt;chi2 = 0.2532
+                               chi2(1) =     8.33  Pr&gt;chi2 = 0.0039
 </pre>
 </div>
 </div>
@@ -14321,7 +14321,7 @@ prescribin |      prescribing
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[172]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> anynotocadf early, col nokey<span class="k"></span>
@@ -14350,30 +14350,30 @@ non-OxyCon |
 prescribin |      prescribing
          g |         0          1 |     Total
 -----------+----------------------+----------
-         0 |       217         52 |       269 
-           |     81.58      72.22 |     79.59 
+         0 |       346         63 |       409 
+           |     87.15      75.90 |     85.21 
 -----------+----------------------+----------
-         1 |        49         20 |        69 
-           |     18.42      27.78 |     20.41 
+         1 |        51         20 |        71 
+           |     12.85      24.10 |     14.79 
 -----------+----------------------+----------
-     Total |       266         72 |       338 
+     Total |       397         83 |       480 
            |    100.00     100.00 |    100.00 
 
                                                          Proportion
                  |   Exposed   Unexposed  |      Total     Exposed
 -----------------+------------------------+------------------------
-           Cases |        20          49  |         69       0.2899
-        Controls |        52         217  |        269       0.1933
+           Cases |        20          51  |         71       0.2817
+        Controls |        63         346  |        409       0.1540
 -----------------+------------------------+------------------------
-           Total |        72         266  |        338       0.2130
+           Total |        83         397  |        480       0.1729
                  |                        |
                  |      Point estimate    |    [95% Conf. Interval]
                  |------------------------+------------------------
-      Odds ratio |         1.703297       |    .8794015    3.212007 (exact)
- Attr. frac. ex. |         .4129032       |   -.1371371    .6886681 (exact)
- Attr. frac. pop |         .1196821       |
+      Odds ratio |          2.15375       |    1.134172    3.967862 (exact)
+ Attr. frac. ex. |         .5356936       |    .1182996    .7479751 (exact)
+ Attr. frac. pop |         .1508996       |
                  +-------------------------------------------------
-                               chi2(1) =     3.05  Pr&gt;chi2 = 0.0806
+                               chi2(1) =     6.89  Pr&gt;chi2 = 0.0087
 </pre>
 </div>
 </div>
@@ -14392,7 +14392,7 @@ prescribin |      prescribing
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[173]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> innovate early,<span class="k"> m</span> col nokey<span class="k"></span>
@@ -14421,21 +14421,21 @@ abuse-deterrence |      prescribing
       mechanisms |         0          1 |     Total
 -----------------+----------------------+----------
     No influence |        12          1 |        13 
-                 |      4.51       1.39 |      3.85 
+                 |      3.02       1.20 |      2.71 
 -----------------+----------------------+----------
-Little influence |        32          1 |        33 
-                 |     12.03       1.39 |      9.76 
+Little influence |        33          1 |        34 
+                 |      8.31       1.20 |      7.08 
 -----------------+----------------------+----------
-  Some influence |        32         20 |        52 
-                 |     12.03      27.78 |     15.38 
+  Some influence |        33         23 |        56 
+                 |      8.31      27.71 |     11.67 
 -----------------+----------------------+----------
- Great influence |         5          5 |        10 
-                 |      1.88       6.94 |      2.96 
+ Great influence |         7          5 |        12 
+                 |      1.76       6.02 |      2.50 
 -----------------+----------------------+----------
-               . |       185         45 |       230 
-                 |     69.55      62.50 |     68.05 
+               . |       312         53 |       365 
+                 |     78.59      63.86 |     76.04 
 -----------------+----------------------+----------
-           Total |       266         72 |       338 
+           Total |       397         83 |       480 
                  |    100.00     100.00 |    100.00 
 
 
@@ -14443,13 +14443,13 @@ Little influence |        32          1 |        33
 innovinflu |      prescribing
       ence |         0          1 |     Total
 -----------+----------------------+----------
-         0 |        44          2 |        46 
-           |     54.32       7.41 |     42.59 
+         0 |        45          2 |        47 
+           |     52.94       6.67 |     40.87 
 -----------+----------------------+----------
-         1 |        37         25 |        62 
-           |     45.68      92.59 |     57.41 
+         1 |        40         28 |        68 
+           |     47.06      93.33 |     59.13 
 -----------+----------------------+----------
-     Total |        81         27 |       108 
+     Total |        85         30 |       115 
            |    100.00     100.00 |    100.00 
 </pre>
 </div>
@@ -14473,7 +14473,7 @@ Early prescribers were more likely (OR 1.7; 0.88, 3.2) to prescribe non-OxyConti
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> state_legis early, col nokey
@@ -14505,13 +14505,13 @@ legislatio |
 third-part |      prescribing
 y payer co |         0          1 |     Total
 -----------+----------------------+----------
-        No |        78          8 |        86 
-           |     30.23      11.11 |     26.06 
+        No |        80          8 |        88 
+           |     30.65      10.96 |     26.35 
 -----------+----------------------+----------
-       Yes |       180         64 |       244 
-           |     69.77      88.89 |     73.94 
+       Yes |       181         65 |       246 
+           |     69.35      89.04 |     73.65 
 -----------+----------------------+----------
-     Total |       258         72 |       330 
+     Total |       261         73 |       334 
            |    100.00     100.00 |    100.00 
 </pre>
 </div>
@@ -14523,7 +14523,7 @@ y payer co |         0          1 |     Total
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> dslimits early, col nokey
@@ -14549,21 +14549,21 @@ y payer co |         0          1 |     Total
       supply) limits |         0          1 |     Total
 ---------------------+----------------------+----------
 Not effective at all |        18          9 |        27 
-                     |      6.77      12.68 |      8.01 
+                     |      6.74      12.68 |      7.99 
 ---------------------+----------------------+----------
-  Somewhat effective |        81         18 |        99 
-                     |     30.45      25.35 |     29.38 
+  Somewhat effective |        82         18 |       100 
+                     |     30.71      25.35 |     29.59 
 ---------------------+----------------------+----------
            Effective |        99         26 |       125 
-                     |     37.22      36.62 |     37.09 
+                     |     37.08      36.62 |     36.98 
 ---------------------+----------------------+----------
       Very effective |        59         14 |        73 
-                     |     22.18      19.72 |     21.66 
+                     |     22.10      19.72 |     21.60 
 ---------------------+----------------------+----------
               Unsure |         9          4 |        13 
-                     |      3.38       5.63 |      3.86 
+                     |      3.37       5.63 |      3.85 
 ---------------------+----------------------+----------
-               Total |       266         71 |       337 
+               Total |       267         71 |       338 
                      |    100.00     100.00 |    100.00 
 </pre>
 </div>
@@ -14575,7 +14575,7 @@ Not effective at all |        18          9 |        27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> urineds early, col nokey
@@ -14601,21 +14601,21 @@ Not effective at all |        18          9 |        27
 Urine drug screening |         0          1 |     Total
 ---------------------+----------------------+----------
 Not effective at all |        22          4 |        26 
-                     |      8.27       5.56 |      7.69 
+                     |      8.24       5.56 |      7.67 
 ---------------------+----------------------+----------
   Somewhat effective |        89         24 |       113 
-                     |     33.46      33.33 |     33.43 
+                     |     33.33      33.33 |     33.33 
 ---------------------+----------------------+----------
            Effective |        99         15 |       114 
-                     |     37.22      20.83 |     33.73 
+                     |     37.08      20.83 |     33.63 
 ---------------------+----------------------+----------
-      Very effective |        42         23 |        65 
-                     |     15.79      31.94 |     19.23 
+      Very effective |        43         23 |        66 
+                     |     16.10      31.94 |     19.47 
 ---------------------+----------------------+----------
               Unsure |        14          6 |        20 
-                     |      5.26       8.33 |      5.92 
+                     |      5.24       8.33 |      5.90 
 ---------------------+----------------------+----------
-               Total |       266         72 |       338 
+               Total |       267         72 |       339 
                      |    100.00     100.00 |    100.00 
 </pre>
 </div>
@@ -14627,7 +14627,7 @@ Not effective at all |        22          4 |        26
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[177]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-stata"><pre><span></span><span class="k">tab</span> kasper early, col nokey
@@ -14654,21 +14654,21 @@ Not effective at all |        22          4 |        26
             (KASPER) |         0          1 |     Total
 ---------------------+----------------------+----------
 Not effective at all |         6          0 |         6 
-                     |      2.26       0.00 |      1.78 
+                     |      2.25       0.00 |      1.78 
 ---------------------+----------------------+----------
   Somewhat effective |        65         12 |        77 
-                     |     24.44      16.90 |     22.85 
+                     |     24.34      16.90 |     22.78 
 ---------------------+----------------------+----------
            Effective |        91         27 |       118 
-                     |     34.21      38.03 |     35.01 
+                     |     34.08      38.03 |     34.91 
 ---------------------+----------------------+----------
-      Very effective |       100         31 |       131 
-                     |     37.59      43.66 |     38.87 
+      Very effective |       101         31 |       132 
+                     |     37.83      43.66 |     39.05 
 ---------------------+----------------------+----------
               Unsure |         4          1 |         5 
                      |      1.50       1.41 |      1.48 
 ---------------------+----------------------+----------
-               Total |       266         71 |       337 
+               Total |       267         71 |       338 
                      |    100.00     100.00 |    100.00 
 </pre>
 </div>
